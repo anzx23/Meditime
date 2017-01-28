@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9356F4B1E380A8000B141EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9356F4A1E380A8000B141EB /* AppDelegate.swift */; };
+		D9356F501E380A8000B141EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9356F4E1E380A8000B141EB /* Main.storyboard */; };
+		D9356F521E380A8000B141EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9356F511E380A8000B141EB /* Assets.xcassets */; };
+		D9356F551E380A8000B141EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9356F531E380A8000B141EB /* LaunchScreen.storyboard */; };
+		D93E22921E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E22911E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift */; };
+		D93F7D8F1E386E00006DD981 /* MeditimeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F7D8E1E386E00006DD981 /* MeditimeTabBarController.swift */; };
+		D93F7D951E387308006DD981 /* MeditimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F7D941E387308006DD981 /* MeditimeViewController.swift */; };
+		D94DCFCE1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */; };
+		D94DCFD01E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */; };
+		D94DCFD21E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFD11E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift */; };
+		D94DCFD41E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFD31E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift */; };
+		D97FAF4F1E3C139000869728 /* IntervalNumberPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97FAF4E1E3C139000869728 /* IntervalNumberPickerView.swift */; };
+		D97FAF511E3C15F800869728 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97FAF501E3C15F800869728 /* TimerPickerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9356F471E380A8000B141EB /* Meditime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9356F4A1E380A8000B141EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9356F4F1E380A8000B141EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9356F511E380A8000B141EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9356F541E380A8000B141EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9356F561E380A8000B141EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93E22911E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+StartButtonSetup.swift"; sourceTree = "<group>"; };
+		D93F7D8E1E386E00006DD981 /* MeditimeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditimeTabBarController.swift; sourceTree = "<group>"; };
+		D93F7D941E387308006DD981 /* MeditimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditimeViewController.swift; sourceTree = "<group>"; };
+		D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+TimerPickerViewSetup.swift"; sourceTree = "<group>"; };
+		D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+IntervalLabelSetup.swift"; sourceTree = "<group>"; };
+		D94DCFD11E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC-IntervalNumberPickerViewSetup.swift"; sourceTree = "<group>"; };
+		D94DCFD31E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+MinutesLabelSetup.swift"; sourceTree = "<group>"; };
+		D97FAF4E1E3C139000869728 /* IntervalNumberPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalNumberPickerView.swift; sourceTree = "<group>"; };
+		D97FAF501E3C15F800869728 /* TimerPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9356F441E380A8000B141EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9356F3E1E380A7F00B141EB = {
+			isa = PBXGroup;
+			children = (
+				D9356F491E380A8000B141EB /* Meditime */,
+				D9356F481E380A8000B141EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9356F481E380A8000B141EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9356F471E380A8000B141EB /* Meditime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9356F491E380A8000B141EB /* Meditime */ = {
+			isa = PBXGroup;
+			children = (
+				D93F7D971E3873D0006DD981 /* View */,
+				D93F7D961E3873C8006DD981 /* Model */,
+				D93F7D981E3873D6006DD981 /* Controller */,
+				D9356F4E1E380A8000B141EB /* Main.storyboard */,
+				D9356F5E1E380B0000B141EB /* Supporting Files */,
+			);
+			path = Meditime;
+			sourceTree = "<group>";
+		};
+		D9356F5E1E380B0000B141EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9356F4A1E380A8000B141EB /* AppDelegate.swift */,
+				D9356F511E380A8000B141EB /* Assets.xcassets */,
+				D9356F531E380A8000B141EB /* LaunchScreen.storyboard */,
+				D9356F561E380A8000B141EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D93F7D961E3873C8006DD981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D93F7D971E3873D0006DD981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D97FAF4E1E3C139000869728 /* IntervalNumberPickerView.swift */,
+				D97FAF501E3C15F800869728 /* TimerPickerView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D93F7D981E3873D6006DD981 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D93F7D8E1E386E00006DD981 /* MeditimeTabBarController.swift */,
+				D93F7D941E387308006DD981 /* MeditimeViewController.swift */,
+				D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */,
+				D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */,
+				D94DCFD11E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift */,
+				D94DCFD31E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift */,
+				D93E22911E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9356F461E380A8000B141EB /* Meditime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9356F591E380A8000B141EB /* Build configuration list for PBXNativeTarget "Meditime" */;
+			buildPhases = (
+				D9356F431E380A8000B141EB /* Sources */,
+				D9356F441E380A8000B141EB /* Frameworks */,
+				D9356F451E380A8000B141EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meditime;
+			productName = Meditime;
+			productReference = D9356F471E380A8000B141EB /* Meditime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9356F3F1E380A7F00B141EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = turonabdul;
+				TargetAttributes = {
+					D9356F461E380A8000B141EB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y2C57LPUV2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D9356F421E380A7F00B141EB /* Build configuration list for PBXProject "Meditime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9356F3E1E380A7F00B141EB;
+			productRefGroup = D9356F481E380A8000B141EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9356F461E380A8000B141EB /* Meditime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9356F451E380A8000B141EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9356F551E380A8000B141EB /* LaunchScreen.storyboard in Resources */,
+				D9356F521E380A8000B141EB /* Assets.xcassets in Resources */,
+				D9356F501E380A8000B141EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9356F431E380A8000B141EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97FAF511E3C15F800869728 /* TimerPickerView.swift in Sources */,
+				D94DCFD41E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift in Sources */,
+				D9356F4B1E380A8000B141EB /* AppDelegate.swift in Sources */,
+				D94DCFD21E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift in Sources */,
+				D93F7D951E387308006DD981 /* MeditimeViewController.swift in Sources */,
+				D94DCFCE1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift in Sources */,
+				D93F7D8F1E386E00006DD981 /* MeditimeTabBarController.swift in Sources */,
+				D94DCFD01E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift in Sources */,
+				D97FAF4F1E3C139000869728 /* IntervalNumberPickerView.swift in Sources */,
+				D93E22921E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9356F4E1E380A8000B141EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9356F4F1E380A8000B141EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9356F531E380A8000B141EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9356F541E380A8000B141EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9356F571E380A8000B141EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9356F581E380A8000B141EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9356F5A1E380A8000B141EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2C57LPUV2;
+				INFOPLIST_FILE = Meditime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tughralabdul.Meditime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D9356F5B1E380A8000B141EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2C57LPUV2;
+				INFOPLIST_FILE = Meditime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tughralabdul.Meditime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9356F421E380A7F00B141EB /* Build configuration list for PBXProject "Meditime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9356F571E380A8000B141EB /* Debug */,
+				D9356F581E380A8000B141EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9356F591E380A8000B141EB /* Build configuration list for PBXNativeTarget "Meditime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9356F5A1E380A8000B141EB /* Debug */,
+				D9356F5B1E380A8000B141EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9356F3F1E380A7F00B141EB /* Project object */;
+}
