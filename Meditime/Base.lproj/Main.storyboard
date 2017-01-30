@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Preference-->
+        <!--Preferences-->
         <scene sceneID="Gk2-aG-2OG">
             <objects>
                 <viewController id="WO9-dA-eBT" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Preference" image="preferences" id="6cF-P7-4WG"/>
+                    <tabBarItem key="tabBarItem" title="Preferences" image="preferences" id="6cF-P7-4WG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91d-E6-lHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,11 @@
 
 import UIKit
 
+// stop counter method after timer reaches 00:00 (Done)
+// pause button
+// resume button
+// stop button
+
 enum TimeUnit: String {
     case minutes = "minutes"
     case seconds = "seconds"
@@ -15,19 +20,43 @@ enum TimeUnit: String {
 
 struct PickerViewData {
     static let sixtyArray: [Int] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
+    static var counter: Int = 59
+}
+
+struct Time {
+    var minutes: UILabel = UILabel()
+    var seconds: UILabel = UILabel()
+    let seperator: UILabel = UILabel()
 }
 
 class MeditimeViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     var timerPickerView: UIPickerView = TimerPickerView()
-    let startButton = UIButton()
+    
+    let intervalNumberPickerView = IntervalNumberPickerView()
     var intervalLabel = UILabel()
     var intervalLabelMin = UILabel()
-    let intervalNumberPickerView = IntervalNumberPickerView()
+    
+    let startButton = UIButton()
+    
+    var minutesLabel = UILabel()
+    var seperatorLabel = UILabel()
+    var secondsLabel = UILabel()
+    
+    var pauseButton = UIButton()
+    var stopButton = UIButton()
+    var resume: Bool = false
+    var reset: Bool = false
+    
+    let time = Time()
+    
+    var scheduledTimer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        
+
     }
     
     func setupViews() {
@@ -36,12 +65,16 @@ class MeditimeViewController: UIViewController, UIPickerViewDataSource, UIPicker
         setupIntervalLabel()
         setupIntervalNumberPickerView()
         setupMinutesLabel()
+        countdownTimerSetup()
+        setupTimerControllers()
     }
-    
-        
-    // action method for startButton
-    func start() {
-        print("start()..")
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if component == 1 {
+            minutesLabel.attributedText = NSAttributedString(string: "\(PickerViewData.sixtyArray[row])", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 96.0, weight: UIFontWeightBold)])
+        } else if component == 2 {
+            secondsLabel.attributedText = NSAttributedString(string: "\(PickerViewData.sixtyArray[row])", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 96.0, weight: UIFontWeightBold)])
+        }
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
