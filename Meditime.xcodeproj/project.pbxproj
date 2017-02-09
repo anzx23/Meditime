@@ -120,6 +120,7 @@
 		D952C2221E4C4D7900D611ED /* MeditimeVC */ = {
 			isa = PBXGroup;
 			children = (
+				D97D3B641E4D1CF7005A8CFB /* MeditimeVCExtensions */,
 				D93F7D941E387308006DD981 /* MeditimeViewController.swift */,
 				D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */,
 				D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */,
@@ -129,6 +130,13 @@
 				D952C2271E4C639D00D611ED /* MeditimeVC+CountdownTimer.swift */,
 			);
 			name = MeditimeVC;
+			sourceTree = "<group>";
+		};
+		D97D3B641E4D1CF7005A8CFB /* MeditimeVCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MeditimeVCExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -65,7 +65,7 @@ extension MeditimeViewController {
         self.view.addConstraints(layoutConstraints)
     }
     
-    func setupMinutesLabel() {
+    func setupIntervalLabelMin() {
         let pickerWidth = (view.frame.width - 16) * 0.2
         
         intervalLabelMin = UILabel(frame: CGRect(x: 24 + intervalLabel.frame.width + pickerWidth , y: 337 + 8, width: view.frame.width - (8 + intervalLabel.frame.width) - 8, height: 50))
