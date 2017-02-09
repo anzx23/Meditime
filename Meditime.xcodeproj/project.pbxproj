@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D924F5811E3EB9FE00F0596F /* MeditimeVC+TimerControllersSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924F5801E3EB9FE00F0596F /* MeditimeVC+TimerControllersSetup.swift */; };
 		D9356F4B1E380A8000B141EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9356F4A1E380A8000B141EB /* AppDelegate.swift */; };
 		D9356F501E380A8000B141EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9356F4E1E380A8000B141EB /* Main.storyboard */; };
 		D9356F521E380A8000B141EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9356F511E380A8000B141EB /* Assets.xcassets */; };
 		D9356F551E380A8000B141EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9356F531E380A8000B141EB /* LaunchScreen.storyboard */; };
 		D93E22921E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E22911E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift */; };
-		D93E22941E3D3412007D9EBC /* MeditimeVC+CountownTimerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E22931E3D3412007D9EBC /* MeditimeVC+CountownTimerSetup.swift */; };
 		D93F7D8F1E386E00006DD981 /* MeditimeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F7D8E1E386E00006DD981 /* MeditimeTabBarController.swift */; };
 		D93F7D951E387308006DD981 /* MeditimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F7D941E387308006DD981 /* MeditimeViewController.swift */; };
 		D94DCFCE1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */; };
 		D94DCFD01E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */; };
 		D94DCFD21E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFD11E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift */; };
-		D94DCFD41E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DCFD31E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift */; };
+		D952C2261E4C4F2500D611ED /* MeditimeVC+PickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952C2251E4C4F2500D611ED /* MeditimeVC+PickerViewDelegate.swift */; };
+		D952C2281E4C639D00D611ED /* MeditimeVC+CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D952C2271E4C639D00D611ED /* MeditimeVC+CountdownTimer.swift */; };
 		D97FAF4F1E3C139000869728 /* IntervalNumberPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97FAF4E1E3C139000869728 /* IntervalNumberPickerView.swift */; };
 		D97FAF511E3C15F800869728 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97FAF501E3C15F800869728 /* TimerPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D924F5801E3EB9FE00F0596F /* MeditimeVC+TimerControllersSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+TimerControllersSetup.swift"; sourceTree = "<group>"; };
 		D9356F471E380A8000B141EB /* Meditime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9356F4A1E380A8000B141EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9356F4F1E380A8000B141EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,13 +31,13 @@
 		D9356F541E380A8000B141EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9356F561E380A8000B141EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93E22911E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+StartButtonSetup.swift"; sourceTree = "<group>"; };
-		D93E22931E3D3412007D9EBC /* MeditimeVC+CountownTimerSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+CountownTimerSetup.swift"; sourceTree = "<group>"; };
 		D93F7D8E1E386E00006DD981 /* MeditimeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditimeTabBarController.swift; sourceTree = "<group>"; };
 		D93F7D941E387308006DD981 /* MeditimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditimeViewController.swift; sourceTree = "<group>"; };
 		D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+TimerPickerViewSetup.swift"; sourceTree = "<group>"; };
 		D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+IntervalLabelSetup.swift"; sourceTree = "<group>"; };
 		D94DCFD11E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC-IntervalNumberPickerViewSetup.swift"; sourceTree = "<group>"; };
-		D94DCFD31E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+MinutesLabelSetup.swift"; sourceTree = "<group>"; };
+		D952C2251E4C4F2500D611ED /* MeditimeVC+PickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+PickerViewDelegate.swift"; sourceTree = "<group>"; };
+		D952C2271E4C639D00D611ED /* MeditimeVC+CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeditimeVC+CountdownTimer.swift"; sourceTree = "<group>"; };
 		D97FAF4E1E3C139000869728 /* IntervalNumberPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalNumberPickerView.swift; sourceTree = "<group>"; };
 		D97FAF501E3C15F800869728 /* TimerPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,16 +112,23 @@
 			isa = PBXGroup;
 			children = (
 				D93F7D8E1E386E00006DD981 /* MeditimeTabBarController.swift */,
+				D952C2221E4C4D7900D611ED /* MeditimeVC */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D952C2221E4C4D7900D611ED /* MeditimeVC */ = {
+			isa = PBXGroup;
+			children = (
 				D93F7D941E387308006DD981 /* MeditimeViewController.swift */,
 				D94DCFCD1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift */,
 				D94DCFCF1E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift */,
 				D94DCFD11E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift */,
-				D94DCFD31E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift */,
 				D93E22911E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift */,
-				D93E22931E3D3412007D9EBC /* MeditimeVC+CountownTimerSetup.swift */,
-				D924F5801E3EB9FE00F0596F /* MeditimeVC+TimerControllersSetup.swift */,
+				D952C2251E4C4F2500D611ED /* MeditimeVC+PickerViewDelegate.swift */,
+				D952C2271E4C639D00D611ED /* MeditimeVC+CountdownTimer.swift */,
 			);
-			name = Controller;
+			name = MeditimeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,16 +205,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D97FAF511E3C15F800869728 /* TimerPickerView.swift in Sources */,
-				D94DCFD41E3C8D3F0074E2D5 /* MeditimeVC+MinutesLabelSetup.swift in Sources */,
 				D9356F4B1E380A8000B141EB /* AppDelegate.swift in Sources */,
 				D94DCFD21E3C8D000074E2D5 /* MeditimeVC-IntervalNumberPickerViewSetup.swift in Sources */,
-				D924F5811E3EB9FE00F0596F /* MeditimeVC+TimerControllersSetup.swift in Sources */,
 				D93F7D951E387308006DD981 /* MeditimeViewController.swift in Sources */,
 				D94DCFCE1E3C8C060074E2D5 /* MeditimeVC+TimerPickerViewSetup.swift in Sources */,
+				D952C2281E4C639D00D611ED /* MeditimeVC+CountdownTimer.swift in Sources */,
 				D93F7D8F1E386E00006DD981 /* MeditimeTabBarController.swift in Sources */,
+				D952C2261E4C4F2500D611ED /* MeditimeVC+PickerViewDelegate.swift in Sources */,
 				D94DCFD01E3C8CA60074E2D5 /* MeditimeVC+IntervalLabelSetup.swift in Sources */,
 				D97FAF4F1E3C139000869728 /* IntervalNumberPickerView.swift in Sources */,
-				D93E22941E3D3412007D9EBC /* MeditimeVC+CountownTimerSetup.swift in Sources */,
 				D93E22921E3D24B3007D9EBC /* MeditimeVC+StartButtonSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

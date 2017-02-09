@@ -1,20 +1,15 @@
 //
-//  MeditimeVC+CountownTimerSetup.swift
+//  MeditimeVC+CountdownTimer.swift
 //  Meditime
 //
-//  Created by tughral on 1/28/17.
+//  Created by tughral on 2/9/17.
 //  Copyright © 2017 turonabdul. All rights reserved.
 //
 
 import UIKit
 
 extension MeditimeViewController {
-    
     func countdownTimerSetup() {
-        
-        minutesLabel = time.minutes
-        seperatorLabel = time.seperator
-        secondsLabel = time.seconds
         
         minutesLabel = UILabel(frame: CGRect(x: 24, y: 400, width: 140, height: 200))
         seperatorLabel = UILabel(frame: CGRect(x: 24 + 70, y: 400, width: 40, height: 200))
@@ -105,29 +100,4 @@ extension MeditimeViewController {
         seperatorLabel.isHidden = true
         secondsLabel.isHidden = true
     }
-    
-    func updateCounter() {
-        var countdownMinutes = -1
-        var countdownSeconds = -1
-        
-        countdownMinutes = Int(minutesLabel.text!)!
-        countdownSeconds = Int(secondsLabel.text!)!
-        
-        
-        if countdownSeconds > 0 {
-            secondsLabel.attributedText = NSAttributedString(string: "\(String(countdownSeconds - 1))", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 96.0, weight: UIFontWeightBold)])
-        } else if countdownSeconds == 0 {
-            
-            if countdownMinutes > 0 {
-                
-                minutesLabel.attributedText = NSAttributedString(string: "\(String(countdownMinutes - 1))", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 96.0, weight: UIFontWeightBold)])
-                
-                secondsLabel.attributedText = NSAttributedString(string: "\(59)", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 96.0, weight: UIFontWeightBold)])
-            } else {
-                scheduledTimer.invalidate()
-            }
-            
-        }
-    }
-
 }

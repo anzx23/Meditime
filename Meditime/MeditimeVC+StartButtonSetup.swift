@@ -69,32 +69,4 @@ extension MeditimeViewController {
         startButton.addConstraints(selfLayoutConstraint)
         self.view.addConstraints(layoutConstraints)
     }
-    
-    func start() {
-        
-        timerPickerView.isHidden = true
-        intervalLabel.isHidden = true
-        intervalNumberPickerView.isHidden = true
-        intervalLabelMin.isHidden = true
-        startButton.isHidden = true
-        
-        minutesLabel.isHidden = false
-        seperatorLabel.isHidden = false
-        secondsLabel.isHidden = false
-        
-        pauseButton.isHidden = false
-        
-        stopButton.isHidden = false
-        
-        if resume || reset {
-            resume = false
-            reset = false
-            
-            stopButton.setTitle("Stop", for: .normal)
-            pauseButton.setTitle("Pause", for: .normal)
-            
-        }
-        
-        scheduledTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-    }
 }
