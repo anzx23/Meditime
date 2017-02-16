@@ -82,6 +82,7 @@ extension MeditimeViewController {
             }
             let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 24.0, weight: UIFontWeightRegular)])
             label.attributedText = title
+            label.backgroundColor = .clear
             return label
             
         default:    return label

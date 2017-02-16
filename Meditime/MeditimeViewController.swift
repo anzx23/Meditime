@@ -43,6 +43,14 @@ class MeditimeViewController: UIViewController, UIPickerViewDataSource, UIPicker
     var stopButton = UIButton()
     var doneButton = UIButton()
     
+    /* PickerView BackgroundImage*/
+    var titleImageView = UIImageView()
+    var timerPickerImageView = UIImageView()
+    
+    /* Hiding Timer Screen */
+    var timerScreenCover = UIView()
+    var hideTimerScreenButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -55,8 +63,10 @@ class MeditimeViewController: UIViewController, UIPickerViewDataSource, UIPicker
         setupIntervalLabel()
         setupIntervalNumberPickerView()
         setupIntervalLabelMin()
+ 
         countdownTimerSetup()
         setupTimerControllers()
+        
     }
     
     /* Start Timer */
@@ -100,7 +110,10 @@ class MeditimeViewController: UIViewController, UIPickerViewDataSource, UIPicker
         intervalLabel.isHidden = true
         intervalLabelMin.isHidden = true
         startButton.isHidden = true
+        timerPickerImageView.isHidden = true
+        titleImageView.isHidden = true
         
+        hideTimerScreenButton.isHidden = false
         minutesLabel.isHidden = false
         seperatorLabel.isHidden = false
         secondsLabel.isHidden = false
@@ -134,18 +147,20 @@ class MeditimeViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     func done() {
-        doneButton.isHidden = true
-        
         timerPickerView.isHidden = false
         intervalNumberPickerView.isHidden = false
         intervalLabel.isHidden = false
         intervalLabelMin.isHidden = false
         startButton.isHidden = false
+        timerPickerImageView.isHidden = false
+        titleImageView.isHidden = false
         
+        doneButton.isHidden = true
         minutesLabel.isHidden = true
         seperatorLabel.isHidden = true
         secondsLabel.isHidden = true
     }
+    
     func setupTimerControllers() {
         pauseButton.addTarget(nil, action: #selector(pause), for: UIControlEvents.touchUpInside)
         stopButton.addTarget(nil, action: #selector(stop), for: UIControlEvents.touchUpInside)

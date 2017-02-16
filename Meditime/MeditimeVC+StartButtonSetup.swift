@@ -11,7 +11,7 @@ import UIKit
 extension MeditimeViewController {
     func setupStartButton() {
         startButton.addTarget(nil, action: #selector(start), for: UIControlEvents.touchUpInside)
-        let length = self.view.frame.width / 4.0
+        let length = self.view.frame.width / 3.7
         let constant = (self.view.frame.width - length) / 2.0
         
         startButton.frame = CGRect(x: 0, y: 0, width: length, height: length)

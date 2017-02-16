@@ -9,8 +9,27 @@
 import UIKit
 
 extension MeditimeViewController {
+    
+    func hideTimer() {
+        /* Hide Display View*/
+        print("hide")
+        timerScreenCover = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
+        timerScreenCover.backgroundColor = UIColor.black
+        self.view.addSubview(timerScreenCover)
+    }
+    
     func countdownTimerSetup() {
+
+        /* Hide Display Button */
+        hideTimerScreenButton.addTarget(nil, action: #selector(hideTimer), for: UIControlEvents.touchUpInside)
+        hideTimerScreenButton.frame = CGRect(x: 0, y: 0, width: 200, height: 75)
+        hideTimerScreenButton.setTitle("Hide Display", for: .normal)
+        hideTimerScreenButton.backgroundColor = UIColor.gray
+        hideTimerScreenButton.layer.cornerRadius = 5
+        hideTimerScreenButton.clipsToBounds = true
         
+        
+        /* Countdown Timer Labels */
         minutesLabel = UILabel(frame: CGRect(x: 24, y: 400, width: 140, height: 200))
         seperatorLabel = UILabel(frame: CGRect(x: 24 + 70, y: 400, width: 40, height: 200))
         secondsLabel = UILabel(frame: CGRect(x: 24 + 90, y: 400, width: 140, height: 200))
@@ -25,13 +44,44 @@ extension MeditimeViewController {
         
         secondsLabel.attributedText = NSAttributedString(string: "30", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 96.0, weight: UIFontWeightBold)])
         
+        
+        /* Add Subviews */
+        self.view.addSubview(timerScreenCover)
+        self.view.addSubview(hideTimerScreenButton)
         self.view.addSubview(minutesLabel)
         self.view.addSubview(seperatorLabel)
         self.view.addSubview(secondsLabel)
+
         
+        /* Disable AutoLayout */
+        hideTimerScreenButton.translatesAutoresizingMaskIntoConstraints = false
         minutesLabel.translatesAutoresizingMaskIntoConstraints = false
         seperatorLabel.translatesAutoresizingMaskIntoConstraints = false
         secondsLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        let hideTimerBtnCenterXConstraint = NSLayoutConstraint(
+            item: hideTimerScreenButton,
+            attribute: NSLayoutAttribute.centerX,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: self.view,
+            attribute: NSLayoutAttribute.centerX,
+            multiplier: 1.0,
+            constant: 0
+        )
+        
+        let hideTimerBtnBottomConstraint = NSLayoutConstraint(
+            item: hideTimerScreenButton,
+            attribute: NSLayoutAttribute.bottom,
+            relatedBy: NSLayoutRelation.equal,
+            toItem: self.bottomLayoutGuide,
+            attribute: NSLayoutAttribute.top,
+            multiplier: 1.0,
+            constant: -16
+        )
+        
+        
+        
         
         let bottomRightConstraint = NSLayoutConstraint(
             item: secondsLabel,
@@ -93,9 +143,10 @@ extension MeditimeViewController {
             constant: -150
         )
         
-        let seperatorLabelConstraints = [bottomRightConstraint, rightConstraint, leftConstraint, bottomLeftConstraint, centerXConstraint, centerYConstraint]
+        let seperatorLabelConstraints = [bottomRightConstraint, rightConstraint, leftConstraint, bottomLeftConstraint, centerXConstraint, centerYConstraint, hideTimerBtnCenterXConstraint, hideTimerBtnBottomConstraint]//, hideScreenCoverCenterXConstraint, hideScreenCoverCenterYConstraint]
         self.view.addConstraints(seperatorLabelConstraints)
         
+        hideTimerScreenButton.isHidden = true
         minutesLabel.isHidden = true
         seperatorLabel.isHidden = true
         secondsLabel.isHidden = true
